@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlashFocus | AI Study Tool</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>⚡ FlashFocus</h1>
+        <p>Paste your notes below to generate flashcards instantly.</p>
+        
+        <textarea id="noteInput" placeholder="Paste lecture notes or paragraphs here..."></textarea>
+        
+        <div class="controls">
+            <button id="generateBtn">Generate Flashcards ✨</button>
+        </div>
+
+        <div id="loading" class="hidden">Generating with Gemini AI...</div>
+
+        <div id="flashcardContainer">
+            </div>
+    </div>
+
+    <script type="module" src="script.js"></script>
+</body>
+</html>
