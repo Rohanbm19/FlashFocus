@@ -1,0 +1,19 @@
+{
+  "name": "flashfocus",
+  "version": "1.0.0",
+  "description": "**FlashFocus** is a small, lightweight front-end web app designed to help you stay focused with short, timed sessions. It's built with plain HTML, CSS, and JavaScript so you can open it locally or deploy it as a static site.",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "vite": "^7.3.0"
+  }
+}

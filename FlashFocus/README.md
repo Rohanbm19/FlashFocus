@@ -10,34 +10,44 @@
 - Configurable focus/short break cycles
 - Minimal dependencies — pure HTML/CSS/JS
 
-> Note: Adjust the features below if your local implementation differs.
-
 ---
 
 ## 🚀 Quick Start
 
 1. Clone or download this repository.
 2. Open `index.html` in your browser to run the app locally.
-   - Or run a simple static server from the project folder:
-     - Python: `python -m http.server 8000` and visit `http://localhost:8000`.
      - VS Code: use the **Live Server** extension.
 
 ---
 
 ### Running locally 🔧
 
-- Start a simple server from the project folder (examples):
-  - Python (works in PowerShell or Command Prompt): `python -m http.server 8000`
-  - Node (serve): `npx serve -l 8000`
-- Access the app at: `http://localhost:8000/` or `http://127.0.0.1:8000/` (the server may print `http://[::]:8000/` when bound to IPv6).
-- **Live Server (VS Code):** `http://127.0.0.1:5500/FlashFocus/index.html` (Live Server commonly uses port **5500**)
-- Stop the server: press **Ctrl+C** in the terminal.
-- Change the port: use a different number (e.g., `python -m http.server 3000`) if 8000 or 5500 is in use.
+You can serve the app locally using several methods. Pick one that fits your workflow.
+
+   VS Code: use the **Live Server** extension.
+    http://127.0.0.1:5500/FlashFocus/index.html
+
+
+- Vite (recommended for development — fast, modern tooling):
+  - One-time setup (if you haven't already):
+    - `npm init -y`
+    - `npm install --save-dev vite`
+  - Add scripts to `package.json` (or run with npx):
+    - `"dev": "vite"`, `"build": "vite build"`, `"preview": "vite preview"`
+  - Start dev server:
+    - `npm run dev`
+  - Open: http://localhost:5173
+
+
+- Test on another device (phone) on the same network:
+  - Python bind example: `py -m http.server 8000 --bind 0.0.0.0`
+  - Find your PC IP (`ipconfig`) and open `http://<your-PC-IP>:8000` on the device.
+
 
 
 ## 🔧 Development
 
-- Files of interest:
+- Files:
   - `index.html` — main markup
   - `style.css` — styles
   - `script.js` — app logic
@@ -52,12 +62,6 @@ Contributions are welcome. Please open an issue or submit a pull request with a 
 
 ---
 
-## 📄 License
-
-This project is provided "as-is" — add a license file or replace this section with your preferred license.
-
----
-
 ## 📌 Contact
 
-If you'd like suggestions or help adding features (e.g., persistence, stats, or theming), open an issue or message the repo owner.
+If you'd like suggestions or help adding features , open an issue or message the repo owner.
