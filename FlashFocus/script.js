@@ -1,6 +1,7 @@
 import { GoogleGenerativeAI } from "https://esm.run/@google/generative-ai@latest";
 // ⚠️ Replace with a FRESH key from AI Studio
-const API_KEY = "AIzaSyDOH6iQT-NttmGVCPi1NbnvWIXGm-td93Q"; 
+const API_KEY = "your-api-key-here"; 
+
 const genAI = new GoogleGenerativeAI(API_KEY);
 
 const generateBtn = document.getElementById('generateBtn');
